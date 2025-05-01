@@ -1,0 +1,28 @@
+// -----**** Font ****-----
+$logo-title-font: "Shrikhand", serif;
+$main-font: "Roboto", sans-serif;
+
+// -----**** colors ****-----
+$purple: #9356dc;
+
+// -----**** Location-colors ****-----
+$location-text: #353535;
+$location-background: #eaeaea;
+
+// -----**** Button ****----
+$button-text-color: white;
+$button-linear-bg: linear-gradient(358deg, #9356dc -11.44%, #ff79da 123.93%);
+
+// -----**** Background ****----
+$background: #f6f6f6;
+
+// -----**** Mixin ****----
+
+@mixin display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin display-flex-row {
+  display: flex;
+  flex-direction: row;
+}

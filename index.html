@@ -4,7 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oh My Food</title>
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/Css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header-home">
+      <div class="header-home-title">
+        <p>ohmyfood</p>
+      </div>
+      <div class="location-container">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+      </div>
+    </header>
+    <div class="main-home">
+      <section class="hero">
+        <div>
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d’exception, sélectionnés par nos soins.
+          </p>
+        </div>
+
+        <button><span>Explorer nos restaurants</span></button>
+      </section>
+      <section class="fonctionnement">
+        <div class="fonctionnement-title">
+          <h2>Fonctionnement</h2>
+        </div>
+        <div class="fonctionnement-cards-container">
+          <article class="fonctionnement-card">
+            <span>1</span>
+            <i class="fa-solid fa-mobile-screen-button" id="phone"></i>
+            <p>Choisissez un restaurant</p>
+          </article>
+          <article class="fonctionnement-card">
+            <span>2</span>
+            <i class="fa-solid fa-list-ul" id="list"></i>
+            <p>Composez votre menu</p>
+          </article>
+          <article class="fonctionnement-card">
+            <span>3</span>
+            <i class="fa-solid fa-store" id="market"></i>
+            <p>Dégustez au restaurant</p>
+          </article>
+        </div>
+      </section>
+      <section class="restaurants">
+        <div class="restaurants-title">
+          <h2>Restaurants</h2>
+        </div>
+        <div class="restaurants-cards-container">
+          <div class="row">
+            <a href=""
+              ><article class="restaurants-cards">
+                <div class="restaurants-cards-img"></div>
+                <div class="restaurants-cards-content">
+                  <h3></h3>
+                  <p></p>
+                  <!-- <input type="checkbox" id="menilmontant" hidden />
+                  <label for="menilmontant" class="heart-label">
+                    <svg
+                      class="heart"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="heartGradient"
+                          x1="11.0002"
+                          y1="-5.4601"
+                          x2="3.43443"
+                          y2="27.9923"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#9356DC" />
+                          <stop offset="1" stop-color="#FF79DA" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                      />
+                    </svg>
+                  </label>
+                </div></article
+            ></a>
+            <a href=""
+              ><article class="restaurants-cards">
+                <input type="checkbox" id="charonne" hidden />
+                <label for="charonne" class="heart-label">
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="21"
+                    viewBox="0 0 22 21"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="heartGradient"
+                        x1="11.0002"
+                        y1="-5.4601"
+                        x2="3.43443"
+                        y2="27.9923"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#9356DC" />
+                        <stop offset="1" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    />
+                  </svg>
+                </label></article
+            ></a> -->
+          </div>
+          <div class="row">
+            <a href=""><article class="restaurants-cards"></article></a>
+            <a href=""><article class="restaurants-cards"></article></a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="link"></div>
+          <div class=""></div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
