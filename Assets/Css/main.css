@@ -12,6 +12,10 @@
   text-decoration: none;
   color: white;
 }
+.main-home .title h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
 .header-home {
   display: flex;
@@ -164,4 +168,130 @@
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px 66px 17px;
+}
+.restaurants .restaurants-title {
+  padding: 54px 0 19px 3px;
+}
+.restaurants .restaurants-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .restaurants-cards-container .row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img {
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  width: 340px;
+  height: 174px;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img .new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  background: #99e2d0;
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 80px;
+  height: 29px;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 174px;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img #resto-2-img {
+  -o-object-position: 40% 60%;
+     object-position: 40% 60%;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content {
+  position: relative;
+  padding: 16px 0 12px 13px;
+  border-radius: 0 0 15px 15px;
+  gap: 5px;
+  color: black;
+  background-color: white;
+  width: 340px;
+  height: 77px;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content p {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content .heart {
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  fill: none;
+  stroke: #101010;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content #menilmontant:checked + .heart-label .heart {
+  fill: url(#heartGradient);
+  stroke: none;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content #charonne:checked + .heart-label .heart {
+  fill: url(#heartGradient);
+  stroke: none;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content #cite-rouge:checked + .heart-label .heart {
+  fill: url(#heartGradient);
+  stroke: none;
+}
+.restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content #folie-mericourt:checked + .heart-label .heart {
+  fill: url(#heartGradient);
+  stroke: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+}
+.footer-container h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-container .link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-container .link-container .link-footer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+.footer-container .link-container .link-footer a h3 {
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
