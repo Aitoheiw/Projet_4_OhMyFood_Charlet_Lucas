@@ -51,17 +51,17 @@
           <article class="fonctionnement-card">
             <span>1</span>
             <i class="fa-solid fa-mobile-screen-button" id="phone"></i>
-            <p>Choisissez un restaurant</p>
+            <h3>Choisissez un restaurant</h3>
           </article>
           <article class="fonctionnement-card">
             <span>2</span>
             <i class="fa-solid fa-list-ul" id="list"></i>
-            <p>Composez votre menu</p>
+            <h3>Composez votre menu</h3>
           </article>
           <article class="fonctionnement-card">
             <span>3</span>
             <i class="fa-solid fa-store" id="market"></i>
-            <p>Dégustez au restaurant</p>
+            <h3>Dégustez au restaurant</h3>
           </article>
         </div>
       </section>
@@ -71,171 +71,231 @@
         </div>
         <div class="restaurants-cards-container">
           <div class="row">
-            <a href=""
-              ><article class="restaurants-cards">
+            <article class="restaurants-cards">
+              <a href="">
                 <div class="restaurants-cards-img">
                   <span class="new">Nouveau</span>
                   <img
                     src="./Assets/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt=""
+                    alt="Photo d'un repas servit dans le restaurant La palette du goût "
                   />
                 </div>
                 <div class="restaurants-cards-content">
                   <h3>La palette du goût</h3>
                   <p>Ménilmontant</p>
-                  <input type="checkbox" id="menilmontant" hidden />
-                  <label for="menilmontant" class="heart-label">
-                    <svg
-                      class="heart"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="21"
-                      viewBox="0 0 22 21"
+                </div></a
+              >
+              <input type="checkbox" id="resto-1" hidden />
+              <label for="resto-1" class="heart-label">
+                <svg
+                  class="heart empty"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    stroke="#101010"
+                  />
+                </svg>
+                <svg
+                  class="heart full"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                >
+                  <defs>
+                    <linearGradient
+                      id="heartGradient-resto-1"
+                      x1="11.0002"
+                      y1="-5.4601"
+                      x2="3.43443"
+                      y2="27.9923"
+                      gradientUnits="userSpaceOnUse"
                     >
-                      <defs>
-                        <linearGradient
-                          id="heartGradient"
-                          x1="11.0002"
-                          y1="-5.4601"
-                          x2="3.43443"
-                          y2="27.9923"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#9356DC" />
-                          <stop offset="1" stop-color="#FF79DA" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
-                      />
-                    </svg>
-                  </label>
-                </div></article
-            ></a>
-            <a href=""
-              ><article class="restaurants-cards">
+                      <stop offset="0%" stop-color="#9356DC" />
+                      <stop offset="100%" stop-color="#FF79DA" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    fill="url(#heartGradient-resto-1)"
+                  />
+                </svg>
+              </label>
+            </article>
+            <article class="restaurants-cards">
+              <a href="">
                 <div class="restaurants-cards-img">
                   <span class="new">Nouveau</span>
                   <img
                     src="./Assets/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                    alt=""
+                    alt="Photo d'un repas servit dans le restaurant La note enchantée"
                     id="resto-2-img"
                   />
                 </div>
                 <div class="restaurants-cards-content">
                   <h3>La note enchantée</h3>
                   <p>Charonne</p>
-                  <input type="checkbox" id="charonne" hidden />
-                  <label for="charonne" class="heart-label">
-                    <svg
-                      class="heart"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="21"
-                      viewBox="0 0 22 21"
+                </div>
+              </a>
+              <input type="checkbox" id="resto-2" hidden />
+              <label for="resto-2" class="heart-label">
+                <svg
+                  class="heart empty"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    stroke="#101010"
+                  />
+                </svg>
+                <svg
+                  class="heart full"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                >
+                  <defs>
+                    <linearGradient
+                      id="heartGradient-resto-2"
+                      x1="11.0002"
+                      y1="-5.4601"
+                      x2="3.43443"
+                      y2="27.9923"
+                      gradientUnits="userSpaceOnUse"
                     >
-                      <defs>
-                        <linearGradient
-                          id="heartGradient"
-                          x1="11.0002"
-                          y1="-5.4601"
-                          x2="3.43443"
-                          y2="27.9923"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#9356DC" />
-                          <stop offset="1" stop-color="#FF79DA" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
-                      />
-                    </svg>
-                  </label>
-                </div></article
-            ></a>
+                      <stop offset="0%" stop-color="#9356DC" />
+                      <stop offset="100%" stop-color="#FF79DA" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    fill="url(#heartGradient-resto-2)"
+                  />
+                </svg>
+              </label>
+            </article>
           </div>
           <div class="row">
-            <a href=""
-              ><article class="restaurants-cards">
+            <article class="restaurants-cards">
+              <a href="">
                 <div class="restaurants-cards-img">
                   <img
                     src="./Assets/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt=""
+                    alt="Photo d'un repas servit dans le restaurant Le délice des sens"
                   />
                 </div>
                 <div class="restaurants-cards-content">
                   <h3>À la française</h3>
                   <p>Cité Rouge</p>
-                  <input type="checkbox" id="cite-rouge" hidden />
-                  <label for="cite-rouge" class="heart-label">
-                    <svg
-                      class="heart"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="21"
-                      viewBox="0 0 22 21"
+                </div>
+              </a>
+              <input type="checkbox" id="resto-3" hidden />
+              <label for="resto-3" class="heart-label">
+                <svg
+                  class="heart empty"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    stroke="#101010"
+                  />
+                </svg>
+                <svg
+                  class="heart full"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                >
+                  <defs>
+                    <linearGradient
+                      id="heartGradient-resto-3"
+                      x1="11.0002"
+                      y1="-5.4601"
+                      x2="3.43443"
+                      y2="27.9923"
+                      gradientUnits="userSpaceOnUse"
                     >
-                      <defs>
-                        <linearGradient
-                          id="heartGradient"
-                          x1="11.0002"
-                          y1="-5.4601"
-                          x2="3.43443"
-                          y2="27.9923"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#9356DC" />
-                          <stop offset="1" stop-color="#FF79DA" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
-                      />
-                    </svg>
-                  </label>
-                </div></article
-            ></a>
-            <a href=""
-              ><article class="restaurants-cards">
+                      <stop offset="0%" stop-color="#9356DC" />
+                      <stop offset="100%" stop-color="#FF79DA" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    fill="url(#heartGradient-resto-3)"
+                  />
+                </svg>
+              </label>
+            </article>
+            <article class="restaurants-cards">
+              <a href="">
                 <div class="restaurants-cards-img">
                   <img
                     src="./Assets/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt=""
+                    alt="Photo d'un repas servit dans le restaurant Le délice des sens"
                   />
                 </div>
                 <div class="restaurants-cards-content">
                   <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
-                  <input type="checkbox" id="folie-mericourt" hidden />
-                  <label for="folie-mericourt" class="heart-label">
-                    <svg
-                      class="heart"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="21"
-                      viewBox="0 0 22 21"
+                </div></a
+              >
+              <input type="checkbox" id="resto-4" hidden />
+              <label for="resto-4" class="heart-label">
+                <svg
+                  class="heart empty"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    stroke="#101010"
+                  />
+                </svg>
+                <svg
+                  class="heart full"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                >
+                  <defs>
+                    <linearGradient
+                      id="heartGradient-resto-4"
+                      x1="11.0002"
+                      y1="-5.4601"
+                      x2="3.43443"
+                      y2="27.9923"
+                      gradientUnits="userSpaceOnUse"
                     >
-                      <defs>
-                        <linearGradient
-                          id="heartGradient"
-                          x1="11.0002"
-                          y1="-5.4601"
-                          x2="3.43443"
-                          y2="27.9923"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#9356DC" />
-                          <stop offset="1" stop-color="#FF79DA" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
-                      />
-                    </svg>
-                  </label>
-                </div></article
-            ></a>
+                      <stop offset="0%" stop-color="#9356DC" />
+                      <stop offset="100%" stop-color="#FF79DA" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12.2207 2.40527C14.1599 0.222558 17.2057 -0.147219 19.3223 1.62402L19.5244 1.80176C21.9408 4.05164 22.1447 8.0625 20.1152 10.6074L19.9121 10.8496L11.5977 20.2148C11.2807 20.5716 10.8021 20.5941 10.4648 20.2822L10.3994 20.2148L2.08496 10.8496C-0.0847856 8.40259 -0.0235333 4.38556 2.25 2.02539L2.47656 1.80176C4.53112 -0.108075 7.5843 0.134683 9.58887 2.19922L9.78027 2.40527L10.627 3.35742L11.001 3.77734L11.374 3.35742L12.2207 2.40527Z"
+                    fill="url(#heartGradient-resto-4)"
+                  />
+                </svg>
+              </label>
+            </article>
           </div>
         </div>
       </section>

@@ -73,7 +73,6 @@
       width: 275px;
       height: 68px;
       text-align: center;
-      text-wrap: wrap;
     }
     p {
       font-size: 18px;
@@ -81,7 +80,6 @@
       width: 315px;
       height: 46px;
       text-align: center;
-      text-wrap: wrap;
     }
   }
   button {
@@ -161,7 +159,7 @@
         height: 17.913px;
       }
 
-      p {
+      h3 {
         font-size: 16px;
         font-weight: 500;
         text-align: center;
@@ -185,6 +183,7 @@
       @include display-flex-column;
       gap: 18px;
       .restaurants-cards {
+        position: relative;
         .restaurants-cards-img {
           position: relative;
           border-radius: 15px 15px 0 0;
@@ -236,35 +235,48 @@
             font-size: 17px;
             font-weight: 300;
           }
-
-          .heart {
-            position: absolute;
-            right: 25px;
-            bottom: 33px;
-            fill: none;
-            stroke: #101010;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-          }
-
-          #menilmontant:checked + .heart-label .heart {
-            fill: url(#heartGradient);
-            stroke: none;
-          }
-          #charonne:checked + .heart-label .heart {
-            fill: url(#heartGradient);
-            stroke: none;
-          }
-          #cite-rouge:checked + .heart-label .heart {
-            fill: url(#heartGradient);
-            stroke: none;
-          }
-          #folie-mericourt:checked + .heart-label .heart {
-            fill: url(#heartGradient);
-            stroke: none;
-          }
         }
       }
+    }
+  }
+}
+
+.heart-label {
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+  width: 22px;
+  height: 21px;
+  cursor: pointer;
+
+  .heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+  }
+
+  .full {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .empty {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+@for $i from 1 through 4 {
+  #resto-#{$i}:checked + .heart-label {
+    .full {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .empty {
+      opacity: 0;
     }
   }
 }
