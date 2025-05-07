@@ -99,7 +99,7 @@ body {
   text-align: center;
 }
 .hero button {
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-out;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -222,6 +222,7 @@ body {
 .restaurants .restaurants-cards-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 18px;
 }
 .restaurants .restaurants-cards-container .row {
@@ -235,7 +236,7 @@ body {
 .restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img {
   position: relative;
   border-radius: 15px 15px 0 0;
-  width: 340px;
+  width: 100%;
   height: 174px;
 }
 .restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img .new {
@@ -276,7 +277,7 @@ body {
   gap: 5px;
   color: black;
   background-color: white;
-  width: 340px;
+  width: 100%;
   height: 77px;
 }
 .restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-content h3 {
@@ -369,6 +370,97 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 769px) {
+  .header-home .header-home-title {
+    align-items: center;
+    height: 96px;
+    padding: 30px 0 32px 0;
+    box-shadow: none;
+  }
+  .header-home .location-container {
+    box-shadow: none;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+  }
+  .hero {
+    padding: 30px 0;
+    gap: 18px;
+  }
+  .hero div {
+    gap: 18px;
+  }
+  .hero div h2 {
+    font-size: 40px;
+    width: 645px;
+    height: 47px;
+  }
+  .hero div p {
+    display: flex;
+    align-items: center;
+    width: 531px;
+  }
+  .fonctionnement {
+    height: auto;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+  .fonctionnement .fonctionnement-title {
+    padding: 0;
+  }
+  .fonctionnement .fonctionnement-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 37px;
+    width: 100%;
+  }
+  .restaurants {
+    padding: 30px 180px;
+    gap: 28px;
+  }
+  .restaurants .restaurants-title {
+    padding: 0;
+  }
+  .restaurants .restaurants-cards-container {
+    gap: 50px;
+  }
+  .restaurants .restaurants-cards-container .row {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .restaurants .restaurants-cards-container .row .restaurants-cards {
+    width: 100%;
+  }
+  .restaurants .restaurants-cards-container .row .restaurants-cards .restaurants-cards-img img {
+    -o-object-position: 30% 70%;
+       object-position: 30% 70%;
+  }
+  .footer-home {
+    background-color: #353535;
+    padding: 30px 25px;
+  }
+  .footer-container {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 54px;
+  }
+  .footer-container h2 {
+    order: 1;
+  }
+  .footer-container .link-container {
+    order: 0;
+    flex-direction: row;
+  }
+  .footer-container .link-container .link-footer-a {
+    width: 130px;
+  }
+  .footer-container .link-container .link-footer a h3 {
+    width: 168px;
+  }
+}
 .header-restaurants {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 14px 89px 13px 17px;
@@ -526,6 +618,9 @@ body.menu-4 .restaurants-img {
   transition: transform 0.25s ease-out;
 }
 .pricing .menu-category-container .menu-category .cards-menu .cards-menu-container .cards-menu-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   flex: 1 1 auto;
   overflow: hidden;
   min-width: 0;
@@ -624,4 +719,103 @@ body.menu-4 .restaurants-img {
 .footer-container-menu .link-container-menu .link-footer-menu a h3 {
   font-size: 16px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  body.menu-1 .restaurants-img {
+    position: relative;
+    z-index: 1;
+    background-image: url("../Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+  }
+  body.menu-2 .restaurants-img {
+    position: relative;
+    z-index: 1;
+    background-image: url("../Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+  }
+  body.menu-3 .restaurants-img {
+    position: relative;
+    z-index: 1;
+    background-image: url("../Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+  }
+  body.menu-4 .restaurants-img {
+    position: relative;
+    z-index: 1;
+    background-image: url("../Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+  }
+  .header-restaurants {
+    padding: 30px 621px 32px 17px;
+  }
+  .header-restaurants .header-restaurants-container {
+    gap: 572px;
+    align-items: flex-end;
+  }
+  .header-restaurants .header-restaurants-title h1 {
+    height: 34px;
+    width: 200px;
+  }
+  .main-restaurants .restaurants-img {
+    height: 400px;
+    width: 100%;
+  }
+  .pricing {
+    width: 1055px;
+    margin: -55px auto 0;
+    align-items: center;
+  }
+  .pricing .pricing-title {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .pricing .pricing-title .like-label {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .pricing .menu-category-container {
+    width: 634px;
+  }
+  .pricing .menu-category-container .menu-category .cards-menu {
+    height: 69px;
+  }
+  .footer-menu {
+    background-color: #353535;
+    padding: 30px 25px;
+  }
+  .footer-container-menu {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 54px;
+  }
+  .footer-container-menu h2 {
+    order: 1;
+  }
+  .footer-container-menu .link-container-menu {
+    order: 0;
+    flex-direction: row;
+  }
+  .footer-container-menu .link-container-menu .link-footer-a {
+    width: 130px;
+  }
+  .footer-container-menu .link-container-menu .link-footer-menu a h3 {
+    width: 168px;
+  }
 }/*# sourceMappingURL=main.css.map */

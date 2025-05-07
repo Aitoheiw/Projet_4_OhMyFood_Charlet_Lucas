@@ -138,6 +138,8 @@ $restaurant-bgs: (
           transition: transform 0.25s ease-out;
 
           .cards-menu-text {
+            @include display-flex-column;
+            gap: 5px;
             flex: 1 1 auto;
             overflow: hidden;
             min-width: 0;
@@ -244,6 +246,86 @@ $restaurant-bgs: (
       h3 {
         font-size: 16px;
         font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @each $class, $image in $restaurant-bgs {
+    body.#{$class} .restaurants-img {
+      @include bg-img-desktop($image);
+    }
+  }
+  .header-restaurants {
+    padding: 30px 621px 32px 17px;
+    .header-restaurants-container {
+      gap: 572px;
+      align-items: flex-end;
+    }
+    .header-restaurants-title {
+      h1 {
+        height: 34px;
+        width: 200px;
+      }
+    }
+  }
+  .main-restaurants {
+    .restaurants-img {
+      height: 400px;
+      width: 100%;
+    }
+  }
+  .pricing {
+    width: 1055px;
+    margin: -55px auto 0;
+    align-items: center;
+    .pricing-title {
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      .like-label {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+    .menu-category-container {
+      width: 634px;
+      .menu-category {
+        .cards-menu {
+          height: 69px;
+        }
+      }
+    }
+  }
+  .footer-menu {
+    background-color: #353535;
+    padding: 30px 25px;
+  }
+  .footer-container-menu {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 54px;
+
+    h2 {
+      order: 1;
+    }
+    .link-container-menu {
+      order: 0;
+      flex-direction: row;
+      .link-footer-a {
+        width: 130px;
+      }
+
+      .link-footer-menu {
+        a {
+          h3 {
+            width: 168px;
+          }
+        }
       }
     }
   }
