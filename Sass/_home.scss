@@ -139,7 +139,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $purple;
+        background-color: $secondary-color;
         color: $button-text-color;
         border-radius: 50%;
         width: 24px;
@@ -161,7 +161,7 @@ body {
         height: 15.922px;
       }
       #market {
-        color: $purple;
+        color: $secondary-color;
         width: 18px;
         height: 17.913px;
       }
@@ -203,7 +203,7 @@ body {
             justify-content: center;
             font-size: 14px;
             font-weight: 500;
-            color: $dark-green;
+            color: $tertiary-color;
             background: $light-green;
             position: absolute;
             right: 12px;
@@ -231,7 +231,7 @@ body {
           padding: 16px 0 12px 13px;
           border-radius: 0 0 15px 15px;
           gap: 5px;
-          color: black;
+          color: $primary-color;
           background-color: white;
           width: 100%;
           height: 77px;
@@ -246,44 +246,6 @@ body {
           }
         }
       }
-    }
-  }
-}
-
-.heart-label {
-  position: absolute;
-  bottom: 33px;
-  right: 25px;
-  width: 22px;
-  height: 21px;
-  cursor: pointer;
-
-  .heart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .full {
-    opacity: 0;
-    z-index: 1;
-  }
-
-  .empty {
-    opacity: 1;
-    z-index: 2;
-  }
-}
-@for $i from 1 through 4 {
-  #resto-#{$i}:checked + .heart-label {
-    .full {
-      opacity: 1;
-    }
-
-    .empty {
-      opacity: 0;
     }
   }
 }

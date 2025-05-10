@@ -1,110 +1,110 @@
 // -----**** Font ****-----
-$logo-title-font: "Shrikhand", serif;
-$main-font: "Roboto", sans-serif;
+// $logo-title-font: "Shrikhand", serif;
+// $main-font: "Roboto", sans-serif;
 
-// -----**** colors ****-----
-$purple: #9356dc;
-$dark-green: #008766;
-$light-green: #99e2d0;
+// // -----**** colors ****-----
+// $purple: #9356dc;
+// $dark-green: #008766;
+// $light-green: #99e2d0;
 
-// -----**** Location-colors ****-----
-$location-text: #353535;
-$location-background: #eaeaea;
+// // -----**** Location-colors ****-----
+// $location-text: #353535;
+// $location-background: #eaeaea;
 
-// -----**** Button ****----
-$button-text-color: white;
-$button-linear-bg: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-// linear-gradient(358deg, #9356dc -11.44%, #ff79da 123.93%)
+// // -----**** Button ****----
+// $button-text-color: white;
+// $button-linear-bg: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+// // linear-gradient(358deg, #9356dc -11.44%, #ff79da 123.93%)
 
-// -----**** Background ****----
-$background: #f6f6f6;
+// // -----**** Background ****----
+// $background: #f6f6f6;
 
 // -----**** Mixin ****----
 
-@mixin default-config {
-  * {
-    font-family: $main-font;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-}
+// @mixin default-config {
+//   * {
+//     font-family: $main-font;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//   }
+// }
 
-@mixin display-flex-column {
-  display: flex;
-  flex-direction: column;
-}
-@mixin display-flex-row {
-  display: flex;
-  flex-direction: row;
-}
+// @mixin display-flex-column {
+//   display: flex;
+//   flex-direction: column;
+// }
+// @mixin display-flex-row {
+//   display: flex;
+//   flex-direction: row;
+// }
 
-@mixin title {
-  h1 {
-    font-family: $logo-title-font;
-    font-size: 30px;
-    font-weight: 400;
-    color: var(--Black, #101010);
-  }
-}
+// @mixin title {
+//   h1 {
+//     font-family: $logo-title-font;
+//     font-size: 30px;
+//     font-weight: 400;
+//     color: var(--Black, #101010);
+//   }
+// }
 
-@mixin hover-button {
-  transition: 0.3s ease-out;
-  cursor: pointer;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    transition: opacity 0.4s ease;
-    border-radius: inherit;
-  }
+// @mixin hover-button {
+//   transition: 0.3s ease-out;
+//   cursor: pointer;
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     z-index: -1;
+//     transition: opacity 0.4s ease;
+//     border-radius: inherit;
+//   }
 
-  &::before {
-    background: var(
-      --Button-Gradient,
-      linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-    );
-    opacity: 1;
-  }
+//   &::before {
+//     background: var(
+//       --Button-Gradient,
+//       linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+//     );
+//     opacity: 1;
+//   }
 
-  &::after {
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.15) 0%,
-        rgba(255, 255, 255, 0.15) 100%
-      ),
-      linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-    opacity: 0;
-  }
+//   &::after {
+//     background: linear-gradient(
+//         0deg,
+//         rgba(255, 255, 255, 0.15) 0%,
+//         rgba(255, 255, 255, 0.15) 100%
+//       ),
+//       linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+//     opacity: 0;
+//   }
 
-  &:hover {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  }
+//   &:hover {
+//     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+//   }
 
-  &:hover::after {
-    opacity: 1;
-  }
+//   &:hover::after {
+//     opacity: 1;
+//   }
 
-  &:hover::before {
-    opacity: 0;
-  }
-}
+//   &:hover::before {
+//     opacity: 0;
+//   }
+// }
 
-@mixin bg-img($url) {
-  position: relative;
-  z-index: 1;
-  background: url($url) lightgray 50% / cover no-repeat;
-}
-@mixin bg-img-desktop($url) {
-  position: relative;
-  z-index: 1;
-  background-image: url($url);
-  background-color: lightgray;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 40% 60%;
-}
+// @mixin bg-img($url) {
+//   position: relative;
+//   z-index: 1;
+//   background: url($url) lightgray 50% / cover no-repeat;
+// }
+// @mixin bg-img-desktop($url) {
+//   position: relative;
+//   z-index: 1;
+//   background-image: url($url);
+//   background-color: lightgray;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: 40% 60%;
+// }
 
 // "../Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"

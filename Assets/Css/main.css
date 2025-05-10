@@ -1,3 +1,88 @@
+.heart-label {
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+  width: 22px;
+  height: 21px;
+  cursor: pointer;
+}
+.heart-label .heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-out;
+}
+.heart-label .full {
+  opacity: 0;
+  z-index: 1;
+}
+.heart-label .empty {
+  opacity: 1;
+  z-index: 2;
+}
+
+#resto-1:checked + .heart-label .full {
+  opacity: 1;
+}
+#resto-1:checked + .heart-label .empty {
+  opacity: 0;
+}
+
+#resto-2:checked + .heart-label .full {
+  opacity: 1;
+}
+#resto-2:checked + .heart-label .empty {
+  opacity: 0;
+}
+
+#resto-3:checked + .heart-label .full {
+  opacity: 1;
+}
+#resto-3:checked + .heart-label .empty {
+  opacity: 0;
+}
+
+#resto-4:checked + .heart-label .full {
+  opacity: 1;
+}
+#resto-4:checked + .heart-label .empty {
+  opacity: 0;
+}
+
+.like-label {
+  position: absolute;
+  top: 8px;
+  right: 41px;
+  width: 22px;
+  height: 21px;
+  cursor: pointer;
+}
+.like-label .like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-out;
+}
+.like-label .full {
+  opacity: 0;
+  z-index: 1;
+}
+.like-label .empty {
+  opacity: 1;
+  z-index: 2;
+}
+
+#resto:checked + .like-label .full {
+  opacity: 1;
+}
+#resto:checked + .like-label .empty {
+  opacity: 0;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -49,7 +134,7 @@ body {
   font-family: "Shrikhand", serif;
   font-size: 30px;
   font-weight: 400;
-  color: var(--Black, #101010);
+  color: black;
 }
 .header-home .location-container {
   position: relative;
@@ -289,58 +374,6 @@ body {
   font-weight: 300;
 }
 
-.heart-label {
-  position: absolute;
-  bottom: 33px;
-  right: 25px;
-  width: 22px;
-  height: 21px;
-  cursor: pointer;
-}
-.heart-label .heart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.heart-label .full {
-  opacity: 0;
-  z-index: 1;
-}
-.heart-label .empty {
-  opacity: 1;
-  z-index: 2;
-}
-
-#resto-1:checked + .heart-label .full {
-  opacity: 1;
-}
-#resto-1:checked + .heart-label .empty {
-  opacity: 0;
-}
-
-#resto-2:checked + .heart-label .full {
-  opacity: 1;
-}
-#resto-2:checked + .heart-label .empty {
-  opacity: 0;
-}
-
-#resto-3:checked + .heart-label .full {
-  opacity: 1;
-}
-#resto-3:checked + .heart-label .empty {
-  opacity: 0;
-}
-
-#resto-4:checked + .heart-label .full {
-  opacity: 1;
-}
-#resto-4:checked + .heart-label .empty {
-  opacity: 0;
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -487,7 +520,7 @@ body {
   font-family: "Shrikhand", serif;
   font-size: 30px;
   font-weight: 400;
-  color: var(--Black, #101010);
+  color: black;
 }
 
 .main-restaurants .restaurants-img {
@@ -540,35 +573,6 @@ body.menu-4 .restaurants-img {
   font-size: 28px;
   font-weight: 400;
 }
-.pricing .pricing-title .like-label {
-  position: absolute;
-  top: 8px;
-  right: 41px;
-  width: 22px;
-  height: 21px;
-  cursor: pointer;
-}
-.pricing .pricing-title .like-label .like {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.pricing .pricing-title .like-label .full {
-  opacity: 0;
-  z-index: 1;
-}
-.pricing .pricing-title .like-label .empty {
-  opacity: 1;
-  z-index: 2;
-}
-.pricing .pricing-title #resto:checked + .like-label .full {
-  opacity: 1;
-}
-.pricing .pricing-title #resto:checked + .like-label .empty {
-  opacity: 0;
-}
 .pricing .menu-category-container {
   display: flex;
   flex-direction: column;
@@ -593,19 +597,33 @@ body.menu-4 .restaurants-img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpCategory 0.6s ease-out forwards;
+}
+@keyframes fadeUpCategory {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .pricing .menu-category-container .menu-category .menu-category-title {
   height: 27px;
   text-transform: uppercase;
 }
 .pricing .menu-category-container .menu-category .cards-menu {
+  height: 69px;
   display: flex;
   position: relative;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
-  transition: 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 .pricing .menu-category-container .menu-category .cards-menu .cards-menu-container {
   display: flex;
@@ -624,6 +642,7 @@ body.menu-4 .restaurants-img {
   flex: 1 1 auto;
   overflow: hidden;
   min-width: 0;
+  transition: 0.25s ease-out;
 }
 .pricing .menu-category-container .menu-category .cards-menu .cards-menu-container .cards-menu-text h4 {
   font-size: 18px;
@@ -631,6 +650,7 @@ body.menu-4 .restaurants-img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: inherit;
 }
 .pricing .menu-category-container .menu-category .cards-menu .cards-menu-container .cards-menu-text p {
   font-size: 15px;
@@ -638,6 +658,7 @@ body.menu-4 .restaurants-img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: inherit;
 }
 .pricing .menu-category-container .menu-category .cards-menu .cards-menu-container .cards-menu-price {
   font-size: 15px;
@@ -655,13 +676,25 @@ body.menu-4 .restaurants-img {
 }
 .pricing .menu-category-container .menu-category .cards-menu:hover .cards-menu-text {
   flex: none;
-  width: 225px;
+  max-width: calc(100% - 100px);
 }
 .pricing .menu-category-container .menu-category .cards-menu:hover .cards-menu-price {
   transform: translateX(-60px);
 }
 .pricing .menu-category-container .menu-category .cards-menu:hover svg {
   right: -1px;
+}
+.pricing .menu-category-container .menu-category:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.pricing .menu-category-container .menu-category:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+.pricing .menu-category-container .menu-category:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.pricing .menu-category-container .menu-category:nth-of-type(4) {
+  animation-delay: 1.4s;
 }
 .pricing .order {
   display: flex;

@@ -1,3 +1,17 @@
-@import "globals";
+// @import "globals";
+@import "Sass-refactor/abstracts/variables";
+@import "Sass-refactor/abstracts/mixin";
+@import "Sass-refactor/abstracts/function";
+@import "Sass-refactor/base/reset.scss";
+@import "Sass-refactor/components/heart-home";
+@import "Sass-refactor/components/heart-menu";
+@import "Sass-refactor/components/button-menu";
+@import "Sass-refactor/components/buttons-home";
+@import "Sass-refactor/components/cards-menu";
+@import "Sass-refactor/layout/footer";
+@import "Sass-refactor/layout/header-home";
+@import "Sass-refactor/layout/header-menu";
+@import "Sass-refactor/pages/home";
+@import "Sass-refactor/pages/menu";
 @import "home";
 @import "page";
