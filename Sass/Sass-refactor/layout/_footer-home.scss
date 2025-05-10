@@ -1,0 +1,26 @@
+.footer-container {
+  @include display-flex-column;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+  h2 {
+    font-family: $logo-title-font;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.link-container {
+  @include display-flex-column;
+  gap: 7px;
+
+  .link-footer a {
+    @include display-flex-row;
+    align-items: center;
+    gap: 11px;
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
