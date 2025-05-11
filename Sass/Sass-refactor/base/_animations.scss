@@ -1,0 +1,65 @@
+@keyframes fadeUpCategory {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes checkRestaurant {
+  from {
+    width: 293px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  25% {
+    width: 250px;
+  }
+  50% {
+    width: 240px;
+  }
+  75% {
+    width: 230px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    display: none;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showContent {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,10 +1,12 @@
 // @import "globals";
 @import "Sass-refactor/abstracts/variables";
+@import "Sass-refactor/base/typography";
 @import "Sass-refactor/abstracts/mixin";
 @import "Sass-refactor/abstracts/function";
 @import "Sass-refactor/abstracts/media-queries-home";
 @import "Sass-refactor/abstracts/media-queries-menu";
 @import "Sass-refactor/base/reset.scss";
+@import "Sass-refactor/base/animations";
 @import "Sass-refactor/components/heart-home";
 @import "Sass-refactor/components/heart-menu";
 @import "Sass-refactor/components/button-menu";
@@ -18,5 +20,3 @@
 @import "Sass-refactor/layout/header-menu";
 @import "Sass-refactor/pages/home";
 @import "Sass-refactor/pages/menu";
-@import "home";
-@import "page";

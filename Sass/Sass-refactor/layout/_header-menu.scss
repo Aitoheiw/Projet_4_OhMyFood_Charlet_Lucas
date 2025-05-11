@@ -1,0 +1,23 @@
+.header-restaurants {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 14px 89px 13px 17px;
+  .header-restaurants-container {
+    @include display-flex-row;
+    gap: 42px;
+    height: 36px;
+    align-items: center;
+  }
+  .back-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-restaurants-title {
+    display: flex;
+    @include title;
+    align-self: flex-start;
+  }
+}

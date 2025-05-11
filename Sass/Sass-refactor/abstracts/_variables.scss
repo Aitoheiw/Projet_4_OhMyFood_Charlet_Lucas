@@ -1,11 +1,8 @@
-$logo-title-font: "Shrikhand", serif;
-$main-font: "Roboto", sans-serif;
-
 // -----**** colors ****-----
 $primary-color: black;
 $secondary-color: #9356dc;
 $tertiary-color: #008766;
-$light-green: #99e2d0;
+$quaternary: #99e2d0;
 
 // -----**** Location-colors ****-----
 $location-text: #353535;
@@ -26,3 +23,4 @@ $restaurant-bgs: (
   "menu-4":
     "../Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
 );
+$delays: 0.2s, 0.6s, 1s, 1.4s;

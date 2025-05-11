@@ -1,0 +1,77 @@
+.main-restaurants {
+  .restaurants-img {
+    height: 275px;
+  }
+}
+
+@each $class, $image in $restaurant-bgs {
+  body.#{$class} .restaurants-img {
+    @include bg-img($image);
+  }
+}
+
+.pricing {
+  @include display-flex-column;
+  gap: 40px;
+  background: $background;
+  position: relative;
+  z-index: 2;
+  margin-top: -55px;
+  padding: 32px 0 40px 0;
+  border-radius: 50px 50px 0 0;
+  .pricing-title {
+    @include display-flex-row;
+    position: relative;
+    padding: 0 17px;
+    h2 {
+      font-family: $logo-title-font;
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+  .menu-category-container {
+    @include display-flex-column;
+    gap: 40px;
+    padding: 0 13px;
+
+    h3 {
+      position: relative;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    h3::before {
+      content: "";
+      position: absolute;
+      background-color: #99e2d0;
+      left: 1px;
+      top: 24px;
+      width: 40px;
+      height: 3px;
+    }
+    .menu-category {
+      @include display-flex-column;
+      gap: 12px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUpCategory 0.6s ease-out forwards;
+      .menu-category-title {
+        height: 27px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @each $delay in $delays {
+    $i: index($delays, $delay);
+
+    .menu-category-container .menu-category:nth-of-type(#{$i}) {
+      animation-delay: $delay;
+    }
+  }
+
+  .order {
+    display: flex;
+    justify-content: center;
+  }
+}
+@include media-querie-menu-769px;

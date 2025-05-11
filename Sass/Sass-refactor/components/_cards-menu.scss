@@ -31,7 +31,6 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        transition: inherit;
       }
 
       p {
@@ -40,7 +39,6 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        transition: inherit;
       }
     }
 
@@ -64,7 +62,7 @@
   &:hover {
     .cards-menu-text {
       flex: none;
-      max-width: calc(100% - 100px);
+      animation: checkRestaurant 0.25s ease-out forwards;
     }
     .cards-menu-price {
       transform: translateX(-60px);
