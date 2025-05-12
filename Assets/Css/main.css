@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes fadeUpCategory {
   from {
     opacity: 0;
@@ -22,9 +21,6 @@
 @keyframes checkRestaurant {
   from {
     width: 293px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
   25% {
     width: 250px;
@@ -37,6 +33,13 @@
   }
   100% {
     width: 220px;
+  }
+}
+@keyframes cheked-restaurant-text {
+  to {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 @keyframes rotation {
@@ -350,14 +353,12 @@ button span {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .cards-menu .cards-menu-container .cards-menu-text p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .cards-menu .cards-menu-container .cards-menu-price {
@@ -377,6 +378,12 @@ button span {
 .cards-menu:hover .cards-menu-text {
   flex: none;
   animation: checkRestaurant 0.25s ease-out forwards;
+}
+.cards-menu:hover .cards-menu-text h4 {
+  animation: cheked-restaurant-text 0.25s ease-out forwards;
+}
+.cards-menu:hover .cards-menu-text p {
+  animation: cheked-restaurant-text 0.25s ease-out forwards;
 }
 .cards-menu:hover .cards-menu-price {
   transform: translateX(-60px);
@@ -555,7 +562,7 @@ body {
 .page-content {
   visibility: hidden;
   opacity: 0;
-  animation: showContent 2s 3s forwards; /* démarre après 3s */
+  animation: showContent 2s 3s forwards;
 }
 
 .main-home {
@@ -902,6 +909,9 @@ body.menu-4 .restaurants-img {
   }
   .pricing .menu-category-container .menu-category .cards-menu {
     height: 69px;
+  }
+  .cards-menu:hover .cards-menu-text {
+    animation: none;
   }
   .footer-menu {
     background-color: #353535;

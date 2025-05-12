@@ -23,9 +23,6 @@
 @keyframes checkRestaurant {
   from {
     width: 293px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
   25% {
     width: 250px;
@@ -38,6 +35,14 @@
   }
   100% {
     width: 220px;
+  }
+}
+
+@keyframes cheked-restaurant-text {
+  to {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 

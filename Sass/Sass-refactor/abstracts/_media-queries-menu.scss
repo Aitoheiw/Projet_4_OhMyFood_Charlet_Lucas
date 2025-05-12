@@ -47,6 +47,12 @@
         }
       }
     }
+    .cards-menu:hover {
+      .cards-menu-text {
+        animation: none;
+      }
+    }
+
     .footer-menu {
       background-color: #353535;
       padding: 30px 25px;

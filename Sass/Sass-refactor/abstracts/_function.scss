@@ -1,0 +1,17 @@
+@mixin delayed-apearenced {
+  @each $delay in $delays {
+    $i: index($delays, $delay);
+
+    .menu-category-container .menu-category:nth-of-type(#{$i}) {
+      animation-delay: $delay;
+    }
+  }
+}
+
+@mixin menu-img {
+  @each $class, $image in $restaurant-bgs {
+    body.#{$class} .restaurants-img {
+      @include bg-img($image);
+    }
+  }
+}

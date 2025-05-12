@@ -3,13 +3,7 @@
     height: 275px;
   }
 }
-
-@each $class, $image in $restaurant-bgs {
-  body.#{$class} .restaurants-img {
-    @include bg-img($image);
-  }
-}
-
+@include menu-img;
 .pricing {
   @include display-flex-column;
   gap: 40px;
@@ -60,14 +54,7 @@
       }
     }
   }
-
-  @each $delay in $delays {
-    $i: index($delays, $delay);
-
-    .menu-category-container .menu-category:nth-of-type(#{$i}) {
-      animation-delay: $delay;
-    }
-  }
+  @include delayed-apearenced;
 
   .order {
     display: flex;

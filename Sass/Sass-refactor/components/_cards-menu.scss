@@ -29,7 +29,7 @@
         font-size: 18px;
         font-weight: 500;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
         overflow: hidden;
       }
 
@@ -37,7 +37,7 @@
         font-size: 15px;
         font-weight: 300;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
         overflow: hidden;
       }
     }
@@ -63,6 +63,12 @@
     .cards-menu-text {
       flex: none;
       animation: checkRestaurant 0.25s ease-out forwards;
+      h4 {
+        animation: cheked-restaurant-text 0.25s ease-out forwards;
+      }
+      p {
+        animation: cheked-restaurant-text 0.25s ease-out forwards;
+      }
     }
     .cards-menu-price {
       transform: translateX(-60px);
