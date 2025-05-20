@@ -6,7 +6,7 @@
   background-color: $background;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  width: 322.486px;
+  // width: 322.486px;
   height: 72.379px;
 
   span {
@@ -31,6 +31,7 @@
   #phone {
     width: 13.019px;
     height: 19.903px;
+    bottom: 25px;
   }
   #list {
     width: 16px;
@@ -46,5 +47,17 @@
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fonctionnement-card {
+    width: 274px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .fonctionnement-card {
+    width: 322.486px;
   }
 }

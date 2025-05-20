@@ -26,9 +26,14 @@
       width: 12px;
       height: 16px;
     }
-    p {
+    form {
+      width: 109px;
+    }
+    input {
       font-size: 16px;
       font-weight: 500;
+      border: none;
+      background: none;
     }
   }
 }
