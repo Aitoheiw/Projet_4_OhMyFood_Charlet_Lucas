@@ -1,26 +1,56 @@
+.footer-home {
+  @media screen and (min-width: 1024px) {
+    background-color: $location-text;
+    padding: 30px 25px;
+  }
+}
+
 .footer-container {
   @include display-flex-column;
   gap: 16px;
   padding: 22px 25px;
   background-color: #353535;
   color: white;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 54px;
+  }
   h3 {
     font-family: $logo-title-font;
     font-size: 18px;
     font-weight: 400;
+    @media screen and (min-width: 1024px) {
+      order: 1;
+    }
   }
 }
 .link-container {
   @include display-flex-column;
   gap: 7px;
+  @media screen and (min-width: 1024px) {
+    order: 0;
+    flex-direction: row;
+  }
 
   .link-footer a {
     @include display-flex-row;
     align-items: center;
     gap: 11px;
+
     h4 {
       font-size: 16px;
       font-weight: 500;
+      @media screen and (min-width: 1024px) {
+        width: 168px;
+      }
     }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .link-footer-a {
+    width: 130px;
   }
 }

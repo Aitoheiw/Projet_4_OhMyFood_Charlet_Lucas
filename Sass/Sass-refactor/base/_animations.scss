@@ -25,20 +25,20 @@
     width: 293px;
   }
   25% {
-    width: 250px;
+    width: 292px;
   }
   50% {
-    width: 240px;
+    width: 290px;
   }
   75% {
-    width: 230px;
+    width: 285px;
   }
   100% {
-    width: 220px;
+    width: 280px;
   }
 }
 
-@media (max-width: 375px) and (min-width: 320px) {
+@media (max-width: 768px) and (min-width: 320px) {
   @keyframes checkRestaurant {
     from {
       width: 250px;

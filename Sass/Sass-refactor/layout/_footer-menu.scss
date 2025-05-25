@@ -1,13 +1,29 @@
+@media screen and (min-width: 1024px) {
+  .footer-menu {
+    background-color: $location-text;
+    padding: 30px 25px;
+  }
+}
 .footer-container-menu {
   @include display-flex-column;
   gap: 16px;
   padding: 22px 25px;
   background-color: #353535;
   color: white;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 54px;
+  }
   h3 {
     font-family: $logo-title-font;
     font-size: 18px;
     font-weight: 400;
+    @media screen and (min-width: 1024px) {
+      order: 1;
+    }
   }
   a {
     text-decoration: none;
@@ -18,6 +34,15 @@
     @include display-flex-column;
     gap: 7px;
     color: white;
+    @media screen and (min-width: 1024px) {
+      order: 0;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1024px) {
+      .link-footer-a {
+        width: 130px;
+      }
+    }
 
     .link-footer-menu a {
       text-decoration: none;
@@ -27,6 +52,9 @@
       h4 {
         font-size: 16px;
         font-weight: 500;
+        @media screen and (min-width: 1024px) {
+          width: 168px;
+        }
       }
     }
   }

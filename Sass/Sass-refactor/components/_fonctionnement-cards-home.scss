@@ -1,12 +1,15 @@
 .fonctionnement-card {
   position: relative;
+  margin-left: 13px;
   @include display-flex-row;
+  gap: 26px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 33px;
   background-color: $background;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  // width: 322.486px;
+  width: 322px;
   height: 72.379px;
 
   span {
@@ -15,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     color: $button-text-color;
     border-radius: 50%;
     width: 24px;
@@ -23,9 +26,9 @@
   }
 
   i {
-    position: absolute;
-    right: 276px;
-    bottom: 28px;
+    // // position: absolute;
+    // left: 9.94%;
+    // bottom: 28px;
     color: #7e7e7e;
   }
   #phone {
@@ -38,26 +41,16 @@
     height: 15.922px;
   }
   #market {
-    color: $secondary-color;
+    color: $primary-color;
     width: 18px;
     height: 17.913px;
   }
 
   h3 {
+    width: 100%;
+    justify-self: flex-start;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .fonctionnement-card {
-    width: 274px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .fonctionnement-card {
-    width: 322.486px;
   }
 }
