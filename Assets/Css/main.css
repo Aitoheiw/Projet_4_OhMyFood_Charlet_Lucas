@@ -35,7 +35,7 @@
     width: 280px;
   }
 }
-@media (max-width: 768px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 320px) {
   @keyframes checkRestaurant {
     from {
       width: 250px;
@@ -53,8 +53,25 @@
       width: 160px;
     }
   }
+  @keyframes checkRestaurantReverse {
+    from {
+      width: 160px;
+    }
+    25% {
+      width: 200px;
+    }
+    50% {
+      width: 210px;
+    }
+    75% {
+      width: 220px;
+    }
+    100% {
+      width: 250px;
+    }
+  }
 }
-@keyframes cheked-restaurant-text {
+@keyframes checked-restaurant-text {
   to {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -136,6 +153,7 @@
 }
 
 .like-label {
+  display: block;
   position: absolute;
   top: 8px;
   right: 41px;
@@ -147,10 +165,11 @@
   .like-label {
     position: relative;
     top: 0;
-    right: 0;
+    right: 41px;
   }
 }
 .like-label .like {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -249,7 +268,7 @@ button span {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  width: 322px;
+  width: 100%;
   height: 72.379px;
 }
 .fonctionnement-card span {
@@ -378,6 +397,7 @@ button span {
 .cards-menu .cards-menu-container {
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: flex-end;
   justify-content: space-between;
   flex: 1 0 0;
@@ -398,12 +418,14 @@ button span {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .cards-menu .cards-menu-container .cards-menu-text p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .cards-menu .cards-menu-container .cards-menu-price {
@@ -425,10 +447,10 @@ button span {
   animation: checkRestaurant 0.25s ease-out forwards;
 }
 .cards-menu:hover .cards-menu-text h4 {
-  animation: cheked-restaurant-text 0.25s ease-out forwards;
+  animation: checked-restaurant-text 0.25s ease-out forwards;
 }
 .cards-menu:hover .cards-menu-text p {
-  animation: cheked-restaurant-text 0.25s ease-out forwards;
+  animation: checked-restaurant-text 0.25s ease-out forwards;
 }
 .cards-menu:hover .cards-menu-price {
   transform: translateX(-60px);
@@ -772,7 +794,7 @@ body {
 .hero div p {
   font-size: 18px;
   font-weight: 300;
-  width: 315px;
+  width: 100%;
   height: 46px;
   text-align: center;
 }
@@ -815,7 +837,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  padding: 0 20px 0 32.5px;
+  padding: 0 20px 0 20px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -922,7 +944,7 @@ body.menu-4 .restaurants-img {
 }
 @media screen and (min-width: 1024px) {
   .pricing {
-    width: 1055px;
+    width: 73%;
     margin: -55px auto 0;
     align-items: center;
   }
@@ -931,19 +953,29 @@ body.menu-4 .restaurants-img {
   display: flex;
   flex-direction: row;
   position: relative;
-  padding: 0 17px;
+  padding: 0 0 0 17px;
+  align-items: center;
+  gap: 24px;
 }
 @media screen and (min-width: 1024px) {
   .pricing .pricing-title {
+    padding: 0;
     justify-content: center;
     align-items: center;
     gap: 24px;
+    width: 90%;
   }
 }
 .pricing .pricing-title h2 {
+  width: 80%;
   font-family: "Shrikhand", serif;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .pricing .pricing-title h2 {
+    width: 307px;
+  }
 }
 .pricing .menu-category-container {
   display: flex;
