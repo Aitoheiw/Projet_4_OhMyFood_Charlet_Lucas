@@ -882,6 +882,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .restaurants .restaurants-cards-container {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurants-cards-container {
     gap: 50px;
   }
 }
@@ -891,6 +896,12 @@ body {
   gap: 18px;
 }
 @media screen and (min-width: 768px) {
+  .restaurants .row {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .restaurants .row {
     flex-direction: row;
     gap: 100px;

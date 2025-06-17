@@ -144,7 +144,11 @@ body {
     @include display-flex-column;
     width: 100%;
     gap: 18px;
+
     @media screen and (min-width: 768px) {
+      gap: 30px;
+    }
+    @media screen and (min-width: 1024px) {
       gap: 50px;
     }
   }
@@ -153,6 +157,10 @@ body {
     @include display-flex-column;
     gap: 18px;
     @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 50px;
+    }
+    @media screen and (min-width: 1024px) {
       flex-direction: row;
       gap: 100px;
     }
